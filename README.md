@@ -5,15 +5,15 @@ This repo is intended to be integrated into other projects either as a git submo
 
 This repo should be installed into a pdk/ subdirectory in the root include file directory of a parent project.
 
-To install as a git Submodule:
+#### To install as a git Submodule:
 - From the root include directory:
   - `git submodule add https://github.com/free-pdk/pdk-includes.git pdk`
 - More info: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
-These include files assume the use of:
+#### These include files assume the use of:
 - The open source SDCC C compiler: http://sdcc.sourceforge.net/
 
-### File Layout:
+#### File Layout:
 - **pdk/device.h** - The main include file.
   - Factory that pulls in the appropriate pdk/device/XXX.h include file and other supporting files.
     - NOTE: Requires definition of the intended Padauk IC device, usually by specifying `-D$(DEVICE)` on the SDCC command line

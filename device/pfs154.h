@@ -124,10 +124,4 @@
 #define MISC2_COMP_PWMG1_BIT0        3
 #define MISC2_TM3_PWMG2_BIT0         4
 
-//TODO: verify these...
-//#define MISC2_UNK_COMP               0x00
-//#define MISC2_UNK_PWMG1              0x08
-//#define MISC2_UNK_TM3                0x00
-//#define MISC2_UNK_PWMG2              0x10
-
 #endif //__PDK_DEVICE_PFS154_H__

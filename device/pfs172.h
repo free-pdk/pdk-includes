@@ -103,6 +103,7 @@
 #define HAS_PORTB
 #define HAS_PB5_PA4_INT
 #define HAS_TM3
+#define HAS_ADC
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"

@@ -130,6 +130,7 @@
 #define HAS_PB5_PA4_INT
 #define HAS_PWMG
 #define HAS_TM3
+#define HAS_ADC
 #define HAS_LCD
 
 #include "periph/accumulator.h"

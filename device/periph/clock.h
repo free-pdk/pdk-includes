@@ -13,7 +13,7 @@ __sfr __at(IHRCR_ADDR)        _ihrcr;
 #define IHRCR                 _ihrcr
 
 // PMS131 doesn't seem to have ILRCR for some reason
-#if defined(ILRCR)
+#if defined(ILRCR_ADDR)
   __sfr __at(ILRCR_ADDR)        _ilrcr;
   #define ILRCR                 _ilrcr
 #endif

@@ -3,6 +3,8 @@
 
 #if defined(PMS150C)
   #include "device/pms150c.h"
+#elif defined(PMS15A)
+  #include "device/pms150c.h"
 #elif defined(PMS152)
   #include "device/pms152.h"
 #elif defined(PMS154B)

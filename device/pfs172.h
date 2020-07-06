@@ -20,13 +20,13 @@
 
 // FUSE definitions
 #define FUSE_WORD_ADDR      0x07ff
-#define FUSE_RES_BITS_HIGH  0x017C // - - B B   0 0 0 1   D 1 1 1   1 1 0 S => 0x017C
-#define FUSE_SECURITY_ON    0x0000 //(S)
-#define FUSE_SECURITY_OFF   0x0001
-#define FUSE_PB4PB7_NORMAL  0x0000 //(D)
-#define FUSE_PB4PB7_STRONG  0x0080
-#define FUSE_BOOTUP_SLOW    0x0000 //(B)
-#define FUSE_BOOTUP_FAST    0x3000
+#define FUSE_RES_BITS_HIGH  0x017C    // - - B B   0 0 0 1   D 1 1 1   1 1 0 S => 0x017C
+#define FUSE_SECURITY_ON    0x0000    //(S)
+#define FUSE_SECURITY_OFF   (1 << 0)
+#define FUSE_PB4_PB7_NORMAL 0x0000    //(D)
+#define FUSE_PB4_PB7_STRONG (1 << 7)
+#define FUSE_BOOTUP_SLOW    0x0000    //(B)
+#define FUSE_BOOTUP_FAST    (3 << 12)
 
 
 // Register address definitions

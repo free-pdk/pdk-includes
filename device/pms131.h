@@ -19,11 +19,11 @@
 
 // FUSE definitions
 #define FUSE_WORD_ADDR      0x05ff
-#define FUSE_RES_BITS_HIGH  0x3C1C // - - 1 1   1 1 0 0   L L L 1   1 1 0 S
+#define FUSE_RES_BITS_HIGH  0x3C1C    // - - 1 1   1 1 0 0   L L L 1   1 1 0 S
 // Blank IC Values          ???
-#define FUSE_SECURITY_ON    0x0000 //(S)
+#define FUSE_SECURITY_ON    0x0000    //(S)
 #define FUSE_SECURITY_OFF   (1 << 0)
-#define FUSE_LVR_4V1        0x0000 //(L)
+#define FUSE_LVR_4V1        0x0000    //(L)
 #define FUSE_LVR_3V6        (1 << 5)
 #define FUSE_LVR_3V1        (2 << 5)
 #define FUSE_LVR_2V8        (3 << 5)
@@ -31,7 +31,6 @@
 #define FUSE_LVR_1V8        (5 << 5)
 #define FUSE_LVR_2V2        (6 << 5)
 #define FUSE_LVR_2V         (7 << 5)
-
 
 
 // Register address definitions

@@ -22,12 +22,12 @@
 #define FUSE_WORD_ADDR      0x0bff
 #define FUSE_RES_BITS_HIGH  0x62FC // - 1 1 B   B 0 1 D   1 1 1 1   1 1 0 S
 // Blank IC Values          0x7FFF // - 1 1 1   1 1 1 1   1 1 1 1   1 1 1 1 (Security Off, PB4/PB5 Strong IO Drive, Fast Boot-up)
-#define FUSE_SECURITY_ON    0x0000 //(S)
-#define FUSE_SECURITY_OFF   0x0001
-#define FUSE_PB4_PB5_NORMAL 0x0000 //(D)
-#define FUSE_PB4_PB5_STRONG 0x0100
-#define FUSE_BOOTUP_SLOW    0x0000 //(B)
-#define FUSE_BOOTUP_FAST    0x1800
+#define FUSE_SECURITY_ON    0x0000    //(S)
+#define FUSE_SECURITY_OFF   (1 << 0)
+#define FUSE_PB4_PB5_NORMAL 0x0000    //(D)
+#define FUSE_PB4_PB5_STRONG (1 << 8)
+#define FUSE_BOOTUP_SLOW    0x0000    //(B)
+#define FUSE_BOOTUP_FAST    (3 << 11)
 
 
 // Register address definitions

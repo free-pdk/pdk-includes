@@ -5,7 +5,9 @@
   #include "device/pms150c.h"
 #elif defined(PMS152)
   #include "device/pms152.h"
-#elif defined(PMS154)
+#elif defined(PMS154B)
+  #include "device/pms154b.h"
+#elif defined(PMS154C)
   #include "device/pms154c.h"
 #elif defined(PMS171B)
   #include "device/pms171b.h"

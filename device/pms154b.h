@@ -1,14 +1,14 @@
-#ifndef __PDK_DEVICE_PMS154C_H__
-#define __PDK_DEVICE_PMS154C_H__
+#ifndef __PDK_DEVICE_PMS154B_H__
+#define __PDK_DEVICE_PMS154B_H__
 
 #if !defined(__PDK_DEVICE_XXX_H__)
-	#define __PDK_DEVICE_XXX_H__ "pms154c.h"
+	#define __PDK_DEVICE_XXX_H__ "pms154b.h"
 #else
 	#error "Attempt to include more than one "pdk/device/XXX.h" file."
 #endif
 
 #if !defined(__SDCC_pdk14)
-	#error "PMS154C needs the PDK14 backend. You must compile with the -mpdk14 option."
+	#error "PMS154B needs the PDK14 backend. You must compile with the -mpdk14 option."
 #endif
 
 #define ILRC_FREQ           70000
@@ -53,7 +53,7 @@
 #define INTEGS_ADDR         0x0c
 #define PADIER_ADDR         0x0d
 #define PBDIER_ADDR         0x0e
-#define MISC2_ADDR          0x0f
+//0x0f
 #define PA_ADDR             0x10
 #define PAC_ADDR            0x11
 #define PAPH_ADDR           0x12
@@ -76,18 +76,9 @@
 #define PWMG0DTL_ADDR       0x23
 #define PWMG0CUBH_ADDR      0x24
 #define PWMG0CUBL_ADDR      0x25
-#define PWMG1C_ADDR         0x26
-#define PWMG1S_ADDR         0x27
-#define PWMG1DTH_ADDR       0x28
-#define PWMG1DTL_ADDR       0x29
-#define PWMG1CUBH_ADDR      0x2a
-#define PWMG1CUBL_ADDR      0x2b
-#define PWMG2C_ADDR         0x2c
-#define PWMG2S_ADDR         0x2d
-#define PWMG2DTH_ADDR       0x2e
-#define PWMG2DTL_ADDR       0x2f
-#define PWMG2CUBH_ADDR      0x30
-#define PWMG2CUBL_ADDR      0x31
+//0x26
+//...
+//0x31
 #define TM3C_ADDR           0x32
 #define TM3CT_ADDR          0x33
 #define TM3S_ADDR           0x34
@@ -121,13 +112,6 @@
 #include "periph/bandgap.h"
 #include "periph/comparator.h"
 #include "periph/pwmg_0.h"
-#include "periph/pwmg_1.h"
-#include "periph/pwmg_2.h"
 #include "periph/misc.h"
-#include "periph/misc2.h"
 
-// Additional MISC2 register definitions
-#define MISC2_COMP_PWMG1_BIT0        3
-#define MISC2_TM3_PWMG2_BIT0         4
-
-#endif //__PDK_DEVICE_PMS154C_H__
+#endif //__PDK_DEVICE_PMS154B_H__

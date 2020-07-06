@@ -124,15 +124,15 @@
 
 
 // Peripheral definitions
-#define __PDK___PDK_HAS_COMP
-#define __PDK___PDK_HAS_EOSC
-#define __PDK___PDK_HAS_PORTB
-#define __PDK___PDK_HAS_PORTC
-#define __PDK___PDK_HAS_PB5_PA4_INT
-#define __PDK___PDK_HAS_TM3
-#define __PDK___PDK_HAS_PWMG
-#define __PDK___PDK_HAS_ADC
-#define __PDK___PDK_HAS_LCD
+#define __PDK_HAS_COMP
+#define __PDK_HAS_EOSC
+#define __PDK_HAS_PORTB
+#define __PDK_HAS_PORTC
+#define __PDK_HAS_PB5_PA4_INT
+#define __PDK_HAS_TM3
+#define __PDK_HAS_PWMG
+#define __PDK_HAS_ADC
+#define __PDK_HAS_LCD
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"

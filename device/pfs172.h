@@ -99,6 +99,7 @@
 
 
 // Peripheral definitions
+#define HAS_COMP
 #define HAS_EOSC
 #define HAS_PORTB
 #define HAS_PB5_PA4_INT
@@ -125,8 +126,10 @@
 
 // Additional MISC register definitions
 // TODO: verify these... they are in the PFS172.INC file but not the datasheet
+#define MISC_EC_DRIVE_BIT            6
+
 #define MISC_EC_DRIVE_HIGH           0x00
-#define MISC_EC_DRIVE_LOW            0x40
+#define MISC_EC_DRIVE_LOW            (1 << MISC_EC_DRIVE_BIT)
 
 // Additional MISC2 register definitions
 #define MISC2_PA6_TO_PA7_BIT         1

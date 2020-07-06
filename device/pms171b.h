@@ -90,12 +90,13 @@
 
 
 // Peripheral definitions
+#define HAS_COMP
+#define HAS_COMP_WAKEUP
 #define HAS_EOSC
 #define HAS_PORTB
 #define HAS_PB5_PA4_INT
 #define HAS_TM3
 #define HAS_ADC
-#define HAS_COMP_WAKEUP
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"

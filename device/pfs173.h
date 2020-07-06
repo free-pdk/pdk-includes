@@ -124,12 +124,13 @@
 
 
 // Peripheral definitions
+#define HAS_COMP
 #define HAS_EOSC
 #define HAS_PORTB
 #define HAS_PORTC
 #define HAS_PB5_PA4_INT
-#define HAS_PWMG
 #define HAS_TM3
+#define HAS_PWMG
 #define HAS_ADC
 #define HAS_LCD
 

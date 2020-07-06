@@ -96,6 +96,7 @@
 
 
 // Peripheral definitions
+#define HAS_COMP
 #define HAS_EOSC
 #define HAS_PORTB
 #define HAS_PB5_PA4_INT

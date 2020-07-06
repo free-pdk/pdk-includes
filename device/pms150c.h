@@ -72,8 +72,9 @@
 
 
 // Peripheral definitions
-#define HAS_COMP_INT_EDGE
+#define HAS_COMP
 #define HAS_COMP_WAKEUP
+#define HAS_COMP_INT_EDGE
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"

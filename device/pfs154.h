@@ -95,10 +95,11 @@
 
 
 // Peripheral definitions
+#define HAS_COMP
 #define HAS_EOSC
 #define HAS_PORTB
-#define HAS_PWMG
 #define HAS_TM3
+#define HAS_PWMG
 #define HAS_LCD
 
 #include "periph/accumulator.h"

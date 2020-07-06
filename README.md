@@ -1,6 +1,8 @@
 # pdk-includes
 This repository contains include files for Padauk MCUs.
 
+### Warning: This is a work in progress and may change significantly before being considered stable.  Use at your own risk.
+
 This repo is intended to be integrated into other projects either as a git Submodule or by manual file copy.
 
 This repo should be installed into a pdk/ subdirectory in the root include file directory of a parent project.

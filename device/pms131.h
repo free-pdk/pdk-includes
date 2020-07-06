@@ -99,12 +99,12 @@
 
 
 // Peripheral definitions
-#define HAS_EOSC
-#define HAS_PORTB
-#define HAS_PB5_PA4_INT
-#define HAS_TM3
-#define HAS_ADC
-#define HAS_ADC_12BIT
+#define __PDK___PDK_HAS_EOSC
+#define __PDK___PDK_HAS_PORTB
+#define __PDK___PDK_HAS_PB5_PA4_INT
+#define __PDK___PDK_HAS_TM3
+#define __PDK___PDK_HAS_ADC
+#define __PDK___PDK_HAS_ADC_12BIT
 
 #include "periph/accumulator.h"
 #include "periph/multiplier.h"

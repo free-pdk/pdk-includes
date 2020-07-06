@@ -96,11 +96,11 @@
 
 
 // Peripheral definitions
-#define HAS_COMP
-#define HAS_EOSC
-#define HAS_PORTB
-#define HAS_PB5_PA4_INT
-#define HAS_PWMG
+#define __PDK___PDK_HAS_COMP
+#define __PDK___PDK_HAS_EOSC
+#define __PDK___PDK_HAS_PORTB
+#define __PDK___PDK_HAS_PB5_PA4_INT
+#define __PDK___PDK_HAS_PWMG
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"

@@ -63,7 +63,8 @@
 //0x1a
 #define MISC_ADDR           0x1b
 #define ADCRGC_ADDR         0x1c
-//...
+//0x1d
+//0x1e
 //0x1f
 #define ADCC_ADDR           0x20
 #define ADCM_ADDR           0x21
@@ -121,7 +122,8 @@
 #include "periph/misc.h"
 #include "periph/rop.h"
 
-// Override some defaults (not sure why these aren't supported but not in .INC file or datasheet)
+// Override some defaults
+// (not sure why these wouldn't be supported but they are not defined either in the .INC file or the datasheet)
 #undef CLKMD_ILRC_DIV16
 #undef TM2C_CLK_EOSC
 #undef TM3C_CLK_EOSC

@@ -47,6 +47,7 @@ This repo should be installed into a pdk/ subdirectory in the root include file 
   - This is pulled in automatically by pdk/device.h
 
 ### Copyright and License:
-- Copyright (C) 2019-2020 - Original version by freepdk, https://free-pdk.github.io
-- Copyright (C) 2020 - Significant refactor by serisman, <github@serisman.com>
-- [GNU LESSER GENERAL PUBLIC LICENSE - v2.1 (or later)](LICENSE)
+- Copyright (C) 2019-2020 - Original version by freepdk (https://free-pdk.github.io)
+- Copyright (C) 2020 - Significant refactor by serisman (github@serisman.com)
+
+[LGPL v2.1 (or later)](LICENSE)

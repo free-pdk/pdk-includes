@@ -46,3 +46,9 @@ This repo should be installed into a pdk/ subdirectory in the root include file 
     - Requires definition of CLKMD_* values, usually performed by pdk/device/XXX.h.
   - This is pulled in automatically by pdk/device.h
 
+#### Copyright:
+- Copyright (C) 2019-2020 - Original version by freepdk https://free-pdk.github.io
+- Copyright (C) 2020 - Significant refactor by serisman <github@serisman.com>
+
+#### License:
+[GNU LESSER GENERAL PUBLIC LICENSE - v2.1 or later](LICENSE)

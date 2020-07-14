@@ -44,4 +44,14 @@
 #define __set0(var,bit)       __asm__("set0 "_STR_VAR(var)", #"_STR(bit)"\n")
 #define __set1(var,bit)       __asm__("set1 "_STR_VAR(var)", #"_STR(bit)"\n")
 
+// BIT definitions
+#define BIT0	               (1)
+#define BIT1	               (1<<1)
+#define BIT2	               (1<<2)
+#define BIT3	               (1<<3)
+#define BIT4	               (1<<4)
+#define BIT5	               (1<<5)
+#define BIT6	               (1<<6)
+#define BIT7	               (1<<7)
+
 #endif //__PDK_UTIL_H__

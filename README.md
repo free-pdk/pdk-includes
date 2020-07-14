@@ -15,7 +15,7 @@ This repo should be installed into a pdk/ subdirectory in the root include file 
 #### These include files assume the use of:
 - The open source SDCC C compiler: http://sdcc.sourceforge.net/
 
-#### File Layout:
+### File Layout:
 - **pdk/device.h** - The main include file.
   - Factory that pulls in the appropriate pdk/device/XXX.h include file and other supporting files.
     - NOTE: Requires definition of the intended Padauk IC device, usually by specifying `-D$(DEVICE)` on the SDCC command line
@@ -46,3 +46,8 @@ This repo should be installed into a pdk/ subdirectory in the root include file 
     - Requires definition of CLKMD_* values, usually performed by pdk/device/XXX.h.
   - This is pulled in automatically by pdk/device.h
 
+### Copyright and License:
+- Copyright (C) 2019-2020 - Original version by freepdk (https://free-pdk.github.io)
+- Copyright (C) 2020 - Major refactor by serisman (github@serisman.com)
+- License: [GPL v2 (or later) + Linking Exception](LICENSE)
+  - The linking exception allows this library to be linked (by SDCC) with proprietary (closed source) applications.

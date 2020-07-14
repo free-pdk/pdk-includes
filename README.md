@@ -48,3 +48,9 @@ This repo should be installed into a pdk/ subdirectory in the root includes dire
   - Contains macros for setting the system clock to the various IHRC and ILRC frequencies.
     - Requires definition of CLKMD_* values, usually performed by device/XXX.h.
   - This is pulled in automatically by device.h
+
+### Copyright and License:
+- Copyright (C) 2019-2020 - Original version by freepdk (https://free-pdk.github.io)
+- Copyright (C) 2020 - Major refactor by serisman (github@serisman.com)
+- License: [GPL v2 (or later) + Linking Exception](LICENSE)
+  - The linking exception allows this library to be linked (by SDCC) with proprietary (closed source) applications.

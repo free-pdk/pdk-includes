@@ -45,7 +45,7 @@
 #define __set1(var,bit)       __asm__("set1 "_STR_VAR(var)", #"_STR(bit)"\n")
 
 // BIT definitions
-#define BIT0	               (1)
+#define BIT0	               (1<<0)
 #define BIT1	               (1<<1)
 #define BIT2	               (1<<2)
 #define BIT3	               (1<<3)

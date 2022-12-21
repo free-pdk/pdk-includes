@@ -29,6 +29,8 @@
 
 #if defined(PFC151)
   #include "device/pfc151.h"
+#elif defined(PFC154)
+  #include "device/pfc154.h"
 #elif defined(PFC161)
   #include "device/pfc161.h"
 #elif defined(PFS154)

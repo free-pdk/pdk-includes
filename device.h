@@ -27,7 +27,9 @@
 #ifndef __PDK_DEVICE_H__
 #define __PDK_DEVICE_H__
 
-#if defined(PFC161)
+#if defined(PFC151)
+  #include "device/pfc151.h"
+#elif defined(PFC161)
   #include "device/pfc161.h"
 #elif defined(PFS154)
   #include "device/pfs154.h"

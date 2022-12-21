@@ -78,7 +78,9 @@ __sfr __at(IHRCR_ADDR)        _ihrcr;
 #if defined(__PDK_HAS_EOSC)
   #define CLKMD_EOSC_DIV8              CLKMD_MODE1(5)
 #endif
-//0x06 reserved
+#if defined(__PDK_HAS_ILRC_DIV2)
+  #define CLKMD_ILRC_DIV2              CLKMD_MODE1(6)
+#endif
 //0x07 reserved
 
 #endif //__PDK_DEVICE_PERIPH_CLOCK_H__

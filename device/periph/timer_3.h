@@ -55,8 +55,16 @@ __sfr __at(TM3B_ADDR)         _tm3b;
 
 #define TM3C_OUT_DISABLE             0x00
 #if defined(__PDK_HAS_PORTB)
-  #define TM3C_OUT_PB5                 (1 << TM3C_OUTPUT_SEL_BIT0)
-  #define TM3C_OUT_PB6                 (2 << TM3C_OUTPUT_SEL_BIT0)
+  #if defined(__PDK_NO_PB5)
+    #define TM3C_OUT_PA4                 (1 << TM3C_OUTPUT_SEL_BIT0)
+  #else
+    #define TM3C_OUT_PB5                 (1 << TM3C_OUTPUT_SEL_BIT0)
+  #endif
+  #if defined(__PDK_NO_PB6)
+    #define TM3C_OUT_PA5                 (2 << TM3C_OUTPUT_SEL_BIT0)
+  #else
+    #define TM3C_OUT_PB6                 (2 << TM3C_OUTPUT_SEL_BIT0)
+  #endif
   #define TM3C_OUT_PB7                 (3 << TM3C_OUTPUT_SEL_BIT0)
 #endif
 

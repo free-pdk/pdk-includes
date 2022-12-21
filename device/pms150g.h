@@ -46,7 +46,7 @@
 // FUSE definitions
 #define FUSE_WORD_ADDR      0x03ff
 #define FUSE_RES_BITS_HIGH  0x0080    // - - - 0   B B D 0   1 B B L   L L 0 S
-// Blank IC Values          ???
+// Blank IC Values          0x0FFD    // - - - 0   1 1 1 1   1 1 1 1   1 1 0 1 (Security Off, 1.8V LVR, PA5 Open Drain, Fast Boot-up)
 #define FUSE_SECURITY_ON    0x0000    //(S)
 #define FUSE_SECURITY_OFF   (1 << 0)
 #define FUSE_LVR_4V         0x0000    //(L)

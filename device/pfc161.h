@@ -47,11 +47,11 @@
 // FUSE definitions
 #define FUSE_WORD_ADDR      0x07ff
 #define FUSE_RES_BITS_HIGH  0x303C // - - 1 1   0 0 0 0   D E 1 1   1 1 0 S
-// Blank IC Values          ???
+// Blank IC Values          0x3FFF // - - 1 1   1 1 1 1   1 1 1 1   1 1 1 1 (Security Off, EMI Disable, PA3_PA4 Drive Strong)
 #define FUSE_SECURITY_ON    0x0000    //(S)
 #define FUSE_SECURITY_OFF   (1 << 0)
-#define FUSE_EMI_ON         0x0000    //(E)
-#define FUSE_EMI_OFF        (1 << 6)
+#define FUSE_EMI_ENABLE     0x0000    //(E)
+#define FUSE_EMI_DISABLE    (1 << 6)
 #define FUSE_PA3_PA4_NORMAL 0x0000    //(D)
 #define FUSE_PA3_PA4_STRONG (1 << 7)
 

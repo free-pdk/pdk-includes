@@ -66,7 +66,7 @@
 #define T16M_ADDR           0x06
 //0x07
 #define MISC_ADDR           0x08
-// 0x09
+//0x09
 #define EOSCR_ADDR          0x0a
 #define IHRCR_ADDR          0x0b
 #define INTEGS_ADDR         0x0c
@@ -89,19 +89,19 @@
 #define TM2CT_ADDR          0x1d
 #define TM2S_ADDR           0x1e
 #define TM2B_ADDR           0x1f
-#define TS_ADDR             0x20 // TODO
-#define TCC_ADDR            0x21 // TODO
-#define TKE2_ADDR           0x22 // TODO
+#define TS_ADDR             0x20
+#define TCC_ADDR            0x21
+#define TKE2_ADDR           0x22
 //0x23
-#define TKE1_ADDR           0x24 // TODO
+#define TKE1_ADDR           0x24
 //0x25
-#define TPS_ADDR            0x26 // TODO
+#define TPS_ADDR            0x26
 //0x27
-#define TPS2_ADDR           0x28 // TODO
+#define TPS2_ADDR           0x28
 //0x29
 //0x2a
-#define TKCH_ADDR           0x2b // TODO
-#define TKCL_ADDR           0x2c // TODO
+#define TKCH_ADDR           0x2b
+#define TKCL_ADDR           0x2c
 #define LVDC_ADDR           0x2d
 //0x2e
 //0x2f
@@ -115,7 +115,7 @@
 //0x37
 //0x38
 #define ILRCR_ADDR          0x39
-#define ROP_ADDR            0x3a // TODO
+#define ROP_ADDR            0x3a
 //0x3b
 //...
 //0x3f
@@ -141,6 +141,7 @@
 #define __PDK_NO_PB5
 #define __PDK_NO_PB6
 #define __PDK_HAS_TM3
+#define __PDK_HAS_TOUCH
 
 #include "periph/accumulator.h"
 #include "periph/stack.h"
@@ -159,10 +160,6 @@
 #include "periph/misc2.h"
 #include "periph/misclvr.h"
 #include "periph/rop.h"
-
-// TODO:
-//  Touch stuff
-//   INTEN TK_END, TK_OV
-//   INTRQ TK_END, TK_OV
+#include "periph/touch.h"
 
 #endif //__PDK_DEVICE_PFC161_H__

@@ -28,7 +28,7 @@
 #define __PDK_DEVICE_PERIPH_INTERRUPT_H__
 
 #if !defined(__PDK_DEVICE_H__)
-	#error "You must #include "pdk/deviceo.h" instead of "pdk/device/periph/interrupt.h" by itself."
+	#error "You must #include "pdk/device.h" instead of "pdk/device/periph/interrupt.h" by itself."
 #endif
 
 // __sfr definitions
@@ -64,6 +64,12 @@ __sfr __at(INTEGS_ADDR)       _integs;
 #if defined(__PDK_HAS_ADC)
   #define INTEN_ADC_ENABLE_BIT         3
   #define INTEN_ADC                    (1 << INTEN_ADC_ENABLE_BIT)
+#endif
+#if defined(__PDK_HAS_TOUCH)
+  #define INTEN_TK_END_ENABLE_BIT      3
+  #define INTEN_TK_OV_ENABLE_BIT       5
+  #define INTEN_TK_END                 (1 << INTEN_TK_END_ENABLE_BIT)
+  #define INTEN_TK_OV                  (1 << INTEN_TK_OV_ENABLE_BIT)
 #endif
 #if defined(__PDK_HAS_COMP)
   #define INTEN_COMP_ENABLE_BIT        4
@@ -101,6 +107,12 @@ __sfr __at(INTEGS_ADDR)       _integs;
 #if defined(__PDK_HAS_ADC)
   #define INTRQ_ADC_BIT                3
   #define INTRQ_ADC                    (1 << INTRQ_ADC_BIT)
+#endif
+#if defined(__PDK_HAS_TOUCH)
+  #define INTRQ_TK_END_BIT             3
+  #define INTRQ_TK_OV_BIT              5
+  #define INTRQ_TK_END                 (1 << INTEN_TK_END_BIT)
+  #define INTRQ_TK_OV                  (1 << INTEN_TK_OV_BIT)
 #endif
 #if defined(__PDK_HAS_COMP)
   #define INTRQ_COMP_BIT               4

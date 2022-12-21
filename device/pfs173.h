@@ -99,9 +99,9 @@
 //0x2a
 #define GPCC_ADDR           0x2b
 #define GPCS_ADDR           0x2c
-//0x2d
-//0x2e
-//0x2f
+#define RFCC_ADDR           0x2d
+#define RFCCRH_ADDR         0x2e
+#define RFCCRL_ADDR         0x2f
 #define TM2C_ADDR           0x30
 #define TM2CT_ADDR          0x31
 #define TM2S_ADDR           0x32
@@ -174,6 +174,7 @@
 #include "periph/timer_3.h"
 #include "periph/bandgap.h"
 #include "periph/comparator.h"
+#include "periph/rfc.h"
 #include "periph/adc.h"
 #include "periph/pwmg_basic.h"
 #include "periph/misc.h"

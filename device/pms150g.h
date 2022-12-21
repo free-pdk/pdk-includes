@@ -1,5 +1,5 @@
 /*
-  pms150c.h: FUSE and Register Definitions for the Padauk PMS150C device.
+  pms150g.h: FUSE and Register Definitions for the Padauk PMS150G device.
 
   Copyright (C) 2020  serisman  <github@serisman.com>
   Copyright (C) 2019-2020  freepdk  https://free-pdk.github.io

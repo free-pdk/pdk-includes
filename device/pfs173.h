@@ -90,7 +90,7 @@
 #define ADCC_ADDR           0x20
 #define ADCM_ADDR           0x21
 #define ADCR_ADDR           0x22
-//0x23
+#define ADCRL_ADDR          0x23
 #define ADCRGC_ADDR         0x24
 //0x25
 #define MISC_ADDR           0x26
@@ -158,6 +158,7 @@
 #define __PDK_HAS_TM3
 #define __PDK_HAS_PWMG
 #define __PDK_HAS_ADC
+#define __PDK_HAS_UNDOCUMENTED_11BIT_ADC
 #define __PDK_HAS_LCD
 
 #include "periph/accumulator.h"

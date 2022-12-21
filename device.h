@@ -39,6 +39,10 @@
   #include "device/pms150c.h"
 #elif defined(PMS15A)
   #include "device/pms150c.h"
+#elif defined(PMS150G)
+  #include "device/pms150g.h"
+#elif defined(PMS15B)
+  #include "device/pms150g.h"
 #elif defined(PMS152)
   #include "device/pms152.h"
 #elif defined(PMS154B)

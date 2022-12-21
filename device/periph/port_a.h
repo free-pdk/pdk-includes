@@ -42,4 +42,9 @@ __sfr __at(PAPH_ADDR)        _paph;
 #define PAC                  _pac
 #define PAPH                 _paph
 
+#if defined(PAPL_ADDR)
+  __sfr __at(PAPL_ADDR)        _papl;
+  #define PAPL                 _papl
+#endif
+
 #endif //__PDK_DEVICE_PERIPH_PORT_A_H__

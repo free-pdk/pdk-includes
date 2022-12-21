@@ -34,7 +34,7 @@
 #endif
 
 #if !defined(__SDCC_pdk14)
-	#error "PFS172 needs the PDK14 backend. You must compile with the -mpdk14 option."
+	#error "PFS172/PFS122/PFS121 needs the PDK14 backend. You must compile with the -mpdk14 option."
 #endif
 
 #define ILRC_FREQ           55000

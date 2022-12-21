@@ -34,7 +34,7 @@
 #endif
 
 #if !defined(__SDCC_pdk15)
-	#error "PFS173 needs the PDK15 backend. You must compile with the -mpdk15 option."
+	#error "PFS173/PFS123 needs the PDK15 backend. You must compile with the -mpdk15 option."
 #endif
 
 #define ILRC_FREQ           93000

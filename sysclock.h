@@ -50,7 +50,26 @@
 #define SYSCLOCK_EOSC_DIV8                  CLKMD_EOSC_DIV8
 
 // System Clock macros
+#if __SDCC_REVISION >= 13762
+// As of SDCC 4.2.10 (revision 13762), _sdcc_external_startup has been renamed
+// to __sdcc_external_startup. If such newer SDCC is in use, when user calls
+// PDK_SET_SYSCLOCK() in the startup function, use that as an opportunity to
+// check for the presence of label (i.e. function) with the old name using
+// assembler macros, emitting an error message prompting the user to rename.
+#define PDK_SET_SYSCLOCK(f) \
+	do { \
+		__asm__( \
+			".ifdef __sdcc_external_startup\n" \
+			".msg '**** ERROR: You are using an SDCC version newer than 4.2.9 ****'\n" \
+			".msg '**** Please rename _sdcc_external_startup to __sdcc_external_startup ****'\n" \
+			".error 1\n" \
+			".endif\n" \
+		); \
+		CLKMD = (uint8_t)(CLKMD_ENABLE_ILRC | CLKMD_ENABLE_IHRC | f); \
+	} while(0)
+#else
 #define PDK_SET_SYSCLOCK(f)                 CLKMD = (uint8_t)(CLKMD_ENABLE_ILRC | CLKMD_ENABLE_IHRC | f)
+#endif
 
 #define PDK_DISABLE_IHRC()                  CLKMD &= ~CLKMD_ENABLE_IHRC
 #define PDK_DISABLE_ILRC()                  CLKMD &= ~CLKMD_ENABLE_ILRC

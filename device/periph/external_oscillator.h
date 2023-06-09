@@ -47,7 +47,7 @@ __sfr __at(EOSCR_ADDR)        _eoscr;
   #define EOSC_32KHZ_CRYSTAL           (1 << EOSC_CRYSTAL_SEL_BIT0)
   #define EOSC_1MHZ_CRYSTAL            (2 << EOSC_CRYSTAL_SEL_BIT0)
   #define EOSC_4MHZ_CRYSTAL            (3 << EOSC_CRYSTAL_SEL_BIT0)
-  #define EOSC_ENABLE                  (1 << EOSC_BG_LVR_SHUTDOWN_BIT)
+  #define EOSC_ENABLE                  (1 << EOSC_ENABLE_BIT)
 #endif
 
 #endif //__PDK_DEVICE_PERIPH_EXTERNAL_OSCILLATOR_H__

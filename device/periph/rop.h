@@ -43,6 +43,11 @@ __sfr __at(ROP_ADDR)          _rop;
   #define ROP_INT_SRC_PA4              (1 << ROP_PB0_PA4_SEL_BIT)
 #endif
 
+#if defined(ROP_PA0_PA5_SEL_BIT)
+  #define ROP_INT_SRC_PA0              0x00
+  #define ROP_INT_SRC_PA5              (1 << ROP_PA0_PA5_SEL_BIT)
+#endif
+
 #if defined(ROP_PA0_PB5_SEL_BIT)
   #define ROP_INT_SRC_PA0              0x00
   #define ROP_INT_SRC_PB5              (1 << ROP_PA0_PB5_SEL_BIT)
@@ -71,6 +76,16 @@ __sfr __at(ROP_ADDR)          _rop;
 #if defined(ROP_TM2_PB2_PB0_SEL_BIT)
   #define ROP_TM2_PB2                  0x00
   #define ROP_TM2_PB0                  (1 << ROP_TM2_PB2_PB0_SEL_BIT)
+#endif
+
+#if defined(ROP_PA7_CS_SEL_BIT)
+  #define ROP_PA7_CS                   0x00
+  #define ROP_PA7_IO                   (1 << ROP_PA7_CS_SEL_BIT)
+#endif
+
+#if defined(ROP_PB7_CS_SEL_BIT)
+  #define ROP_PB7_CS                   0x00
+  #define ROP_PB7_IO                   (1 << ROP_PB7_CS_SEL_BIT)
 #endif
 
 #endif //__PDK_DEVICE_PERIPH_ROP_H__

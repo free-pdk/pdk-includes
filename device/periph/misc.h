@@ -39,7 +39,6 @@ __sfr __at(MISC_ADDR)         _misc;
 // MISC register definitions
 #define MISC_WATCHDOG_BIT0           0
 #define MISC_LVR_DISABLE_BIT         2
-#define MISC_FAST_WAKEUP_ENABLE_BIT  5
 
 #define MISC_WATCHDOG_8K_ILRC        0x00
 #define MISC_WATCHDOG_16K_ILRC       (1 << MISC_WATCHDOG_BIT0)
@@ -49,8 +48,11 @@ __sfr __at(MISC_ADDR)         _misc;
 #define MISC_LVR_ENABLE              0x00
 #define MISC_LVR_DISABLE             (1 << MISC_LVR_DISABLE_BIT)
 
-#define MISC_FAST_WAKEUP_DISABLE     0x00
-#define MISC_FAST_WAKEUP_ENABLE      (1 << MISC_FAST_WAKEUP_ENABLE_BIT)
+#if !defined(__PDK_NO_FAST_WAKEUP)
+  #define MISC_FAST_WAKEUP_ENABLE_BIT  5
+  #define MISC_FAST_WAKEUP_DISABLE     0x00
+  #define MISC_FAST_WAKEUP_ENABLE      (1 << MISC_FAST_WAKEUP_ENABLE_BIT)
+#endif
 
 #if defined(__PDK_HAS_LCD)
   #define MISC_LCD_ENABLE_BIT          4

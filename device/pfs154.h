@@ -111,9 +111,9 @@
 #define TM3CT_ADDR          0x33
 #define TM3S_ADDR           0x34
 #define TM3B_ADDR           0x35
-//0x36
-//0x37
-//0x38
+#define RFCC_ADDR           0x36
+#define RFCCRH_ADDR         0x37
+#define RFCCRL_ADDR         0x38
 #define ILRCR_ADDR          0x39
 //0x3a
 //...
@@ -140,6 +140,7 @@
 #include "periph/timer_3.h"
 #include "periph/bandgap.h"
 #include "periph/comparator.h"
+#include "periph/rfc.h"
 #include "periph/pwmg_0.h"
 #include "periph/pwmg_1.h"
 #include "periph/pwmg_2.h"

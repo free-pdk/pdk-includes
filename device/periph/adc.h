@@ -46,6 +46,12 @@ __sfr __at(ADCM_ADDR)         _adcm;
 #else
   __sfr __at(ADCR_ADDR)         _adcr;
   #define ADCR                  _adcr
+
+  #if defined(__PDK_HAS_UNDOCUMENTED_11BIT_ADC)
+    // https://deploy-preview-50--free-pdk-preview.netlify.app/undocumented-features#11-bit-adc-pfs173
+    __sfr __at(ADCRL_ADDR)        _adcrl;
+    #define ADCRL                 _adcrl
+  #endif
 #endif
 
 #if defined(ADCRGC_ADDR)

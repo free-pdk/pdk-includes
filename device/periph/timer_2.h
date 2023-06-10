@@ -55,11 +55,19 @@ __sfr __at(TM2B_ADDR)        _tm2b;
 
 #define TM2C_OUT_DISABLE             0x00
 #if defined(__PDK_HAS_PORTB)
-  #define TM2C_OUT_PB2                 (1 << TM2C_OUTPUT_SEL_BIT0)
+  #if defined(__PDK_NO_PB2)
+    #define TM2C_OUT_PA0                 (1 << TM2C_OUTPUT_SEL_BIT0)
+  #else
+    #define TM2C_OUT_PB2                 (1 << TM2C_OUTPUT_SEL_BIT0)
+  #endif
 #endif
 #define TM2C_OUT_PA3                 (2 << TM2C_OUTPUT_SEL_BIT0)
 #if defined(__PDK_HAS_PORTB)
-  #define TM2C_OUT_PB4                 (3 << TM2C_OUTPUT_SEL_BIT0)
+  #if defined(__PDK_NO_PB4)
+    #define TM2C_OUT_PB0                 (3 << TM2C_OUTPUT_SEL_BIT0)
+  #else
+    #define TM2C_OUT_PB4                 (3 << TM2C_OUTPUT_SEL_BIT0)
+  #endif
 #else
   #define TM2C_OUT_PA4                 (3 << TM2C_OUTPUT_SEL_BIT0)
 #endif
